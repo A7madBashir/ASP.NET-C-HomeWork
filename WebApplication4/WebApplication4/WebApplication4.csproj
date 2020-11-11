@@ -96,7 +96,6 @@
     <Compile Include="Page1.aspx.designer.cs">
       <DependentUpon>Page1.aspx</DependentUpon>
     </Compile>
-    <Compile Include="Test.cs" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
