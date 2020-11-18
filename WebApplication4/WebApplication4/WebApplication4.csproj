@@ -66,6 +66,10 @@
     <Reference Include="System.EnterpriseServices" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="ApplicationState.aspx" />
+    <Content Include="ClickCheck.aspx" />
+    <Content Include="Cookies_And_HiddenField.aspx" />
+    <Content Include="MoveText.aspx" />
     <Content Include="packages.config" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
@@ -76,25 +80,69 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="bootstrap.css" />
-    <Content Include="Page2.aspx" />
+    <Content Include="QueryString%28Page 1%29.aspx" />
+    <Content Include="QueryString%28Page 2%29.aspx" />
+    <Content Include="Session.aspx" />
+    <Content Include="ViewState.aspx" />
     <Content Include="Web.config" />
-    <Content Include="Page1.aspx" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Page2.aspx.cs">
-      <DependentUpon>Page2.aspx</DependentUpon>
+    <Compile Include="ApplicationState.aspx.cs">
+      <DependentUpon>ApplicationState.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="Page2.aspx.designer.cs">
-      <DependentUpon>Page2.aspx</DependentUpon>
+    <Compile Include="ApplicationState.aspx.designer.cs">
+      <DependentUpon>ApplicationState.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ClickCheck.aspx.cs">
+      <DependentUpon>ClickCheck.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ClickCheck.aspx.designer.cs">
+      <DependentUpon>ClickCheck.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Cookies_And_HiddenField.aspx.cs">
+      <DependentUpon>Cookies_And_HiddenField.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Cookies_And_HiddenField.aspx.designer.cs">
+      <DependentUpon>Cookies_And_HiddenField.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="MoveText.aspx.cs">
+      <DependentUpon>MoveText.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="MoveText.aspx.designer.cs">
+      <DependentUpon>MoveText.aspx</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="Page1.aspx.cs">
-      <DependentUpon>Page1.aspx</DependentUpon>
+    <Compile Include="QueryString%28Page 1%29.aspx.cs">
+      <DependentUpon>QueryString%28Page 1%29.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="Page1.aspx.designer.cs">
-      <DependentUpon>Page1.aspx</DependentUpon>
+    <Compile Include="QueryString%28Page 1%29.aspx.designer.cs">
+      <DependentUpon>QueryString%28Page 1%29.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="QueryString%28Page 2%29.aspx.cs">
+      <DependentUpon>QueryString%28Page 2%29.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="QueryString%28Page 2%29.aspx.designer.cs">
+      <DependentUpon>QueryString%28Page 2%29.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Session.aspx.cs">
+      <DependentUpon>Session.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="session.aspx.designer.cs">
+      <DependentUpon>Session.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ViewState.aspx.cs">
+      <DependentUpon>ViewState.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ViewState.aspx.designer.cs">
+      <DependentUpon>ViewState.aspx</DependentUpon>
     </Compile>
   </ItemGroup>
   <PropertyGroup>
