@@ -9,6 +9,9 @@
 <body>
     <form id="form1" runat="server">
     <div>
+         <asp:Button ID="counter" runat="server" Text="plus" OnClick="Button1_Click" />
+        <asp:Label ID="Label1" runat="server" Text="Label"></asp:Label>
+
     <sessionState mode="InProc" timeout="20" cookieless="true"></sessionState>  
     </div>
     </form>

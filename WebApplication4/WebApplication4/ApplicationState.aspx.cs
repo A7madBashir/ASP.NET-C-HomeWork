@@ -7,13 +7,10 @@ using System.Web.UI.WebControls;
 
 namespace WebApplication4
 {
+
     public partial class ApplicationState : System.Web.UI.Page
     {
-        protected void Page_Load(object sender, EventArgs e)
-        {
-            Response.Write("The num of users online=" + Application["user"].ToString());
-        }
-        
+        int count = 1;
         protected void Application_Start(object sender, EventArgs e)
         {
             //this event is execute only once when application start and it stores the server memory until the worker process is restart  
@@ -32,6 +29,18 @@ namespace WebApplication4
             Application.Lock();
             Application["user"] = (int)Application["user"] - 1;
             Application.UnLock();
+        }
+        protected void Page_Load(object sender, EventArgs e)
+        {
+            Response.Write("The num of users online=" + Application["user"]);
+        }
+
+        protected void Button1_Click(object sender, EventArgs e)
+        {
+            if (ViewState["incress"] != null)
+                count = (int)ViewState["incress"] + 1;
+            Label1.Text = count.ToString();
+            ViewState["incress"] = count;
         }
     }
 }
